@@ -1,0 +1,14 @@
+player.png
+https://opengameart.org/content/top-down-shooter-character
+
+zombie.png
+https://opengameart.org/content/animated-top-down-zombie
+
+gunshot.mp3
+357 Magnum Revolver Gunshot with Tail by Shark_Anthony -- https://freesound.org/s/683175/ -- License: Creative Commons 0
+
+zombie_loop.mp3
+Zombie Monster growl and scream by NachtmahrTV -- https://freesound.org/s/618115/ -- License: Creative Commons 0
+
+impact.mp3
+1 Impact Wet by original_sound -- https://freesound.org/s/376819/ -- License: Attribution 3.0
