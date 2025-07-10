@@ -4,7 +4,7 @@ Zombies = require 'zombie'
 Bullets = require 'bullet'
 Bloods = require 'blood'
 Hud = require 'hud'
-Signal = require 'hump.signal'
+Signal = require 'lib.hump.signal'
 Util = require 'util'
 
 GameState = { TITLE = 1, PLAYING = 2, GAMEOVER =3 }

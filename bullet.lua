@@ -1,6 +1,6 @@
 -- Bullet class
 
-Class = require 'hump.class'
+Class = require 'lib.hump.class'
 
 local M = {}
 local bullets = {}

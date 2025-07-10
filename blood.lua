@@ -1,7 +1,7 @@
 -- Blooc class
 
-Class = require "hump.class"
-Signal = require 'hump.signal'
+Class = require "lib.hump.class"
+Signal = require 'lib.hump.signal'
 Util = require 'util'
 
 Blood = Class {

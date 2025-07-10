@@ -1,6 +1,6 @@
 -- Player class
 
-Class = require "hump.class"
+Class = require "lib.hump.class"
 Assets = require 'assets'
 Util = require 'util'
 

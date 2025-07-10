@@ -1,6 +1,6 @@
 -- asset.lua
 
-Class = require 'hump.class'
+Class = require 'lib.hump.class'
 
 local Assets = Class {
 	sprites = {},

@@ -1,7 +1,7 @@
 -- hud.lua
 
-Timer = require 'hump.timer'
-Class = require 'hump.class'
+Timer = require 'lib.hump.timer'
+Class = require 'lib.hump.class'
 
 local Hud = Class {
 	init = function(self)
