@@ -12,6 +12,7 @@ Player = Class {
 		self.defaultSpeed = 180
 		self.speed = defaultSpeed
 		self.rotation = 0
+		self.leftGun = true
 		self.injured = false
 	end
 }
@@ -56,18 +57,22 @@ function Player:move(moveX, moveY, dt)
 end
 
 function Player:fire()
-	-- Bullet 1 position (offset x, y from player)
-	local ox, oy = Util.rotatePoint(
-		0, - self.sprite:getHeight() * 0.38, self.rotation)
+	self.leftGun = not self.leftGun
+	local ox = 0
+	local oy = 0
+
+	if self.leftGun then
+		-- Fire left gun
+		ox, oy = Util.rotatePoint(
+			0, - self.sprite:getHeight() * 0.38, self.rotation)
+	else
+		-- Fire right gun
+		ox, oy = Util.rotatePoint(
+			0, self.sprite:getHeight() * 0.42, self.rotation)
+	end
+
 	Bullets.spawn(Assets.sprites.bullet,
 		self.x + ox, self.y + oy, self.rotation)
-
-	-- Bullet 2 position (offset x, y from player)
-	ox, oy = Util.rotatePoint(
-		0, self.sprite:getHeight() * 0.42, self.rotation)
-	Bullets.spawn(Assets.sprites.bullet,
-		self.x + ox, self.y + oy, self.rotation)
-
 	Assets.sounds.gunshot:clone():play()
 end
 
